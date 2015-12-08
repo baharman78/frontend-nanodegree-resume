@@ -18,7 +18,7 @@ var bio = {
     "FactoryTalk SE, FactoryTalk ME, Panelviews, and Thinmanager",
     "Powerflex 70 VFDs, Powerflex 525 VFD's, Allen Bradley 160 VFDs, and Armorstart VFDs"
   ],
-  "biopic" : "images/fry.jpg",
+  "biopic" : "images/fry-300.jpg",
   "display" : function(){
     var formattedname = {};
     var formattedrole = {};
@@ -38,7 +38,7 @@ var bio = {
     formattedcontactmobile = HTMLmobile.replace("%data%",this.contact.mobile);
     formattedcontactgithub = HTMLgithub.replace("%data%",this.contact.github);
     formattedcontactlocation = HTMLlocation.replace("%data%",this.contact.location);
-    formattedcontactinfo = formattedcontactemail + formattedcontactgithub + formattedcontactgithub + formattedcontactlocation;
+    formattedcontactinfo = formattedcontactemail + formattedcontactmobile + formattedcontactgithub + formattedcontactlocation;
     $("#topContacts").append(formattedcontactinfo);
     $("#footerContacts").append(formattedcontactinfo);
     formattedpicture = HTMLbioPic.replace("%data%",this.biopic);
@@ -168,7 +168,7 @@ var projects = {
         "Created a recursive function to unzip data in order to preserve the pattern utilizing a binary search tree",
         "Learned that data structures provide different run times depending on which ones are used"
       ],
-      "images" : "images/fry.jpg"
+      "images" : "images/DataStructures-300.jpg"
     },
     {
       "title" : "Senior Design",
@@ -178,7 +178,7 @@ var projects = {
         "Presented design review with team and individually in order to show the progress periodically throughout project",
         "Incorporated modularization in project to allow for easy integration of future subsystems"
       ],
-      "images" : "images/fry.jpg"
+      "images" : "images/Circuit-300.jpg"
     },
     {
       "title" : "Vertically Integrated Projects",
@@ -188,7 +188,7 @@ var projects = {
         "Programmed microcontroller to work with gyroscopes and accelerometer to collect and store data",
         "Started interfacing individual sensors with microcontroller, and then considered how to incorporate additional sensors afterward"
       ],
-      "images" : "images/fry.jpg"
+      "images" : "images/VIP-300.png"
     },
     {
       "title" : "Microcontrollers",
@@ -198,7 +198,7 @@ var projects = {
         "Designed embedded circuits to interface with microcontroller and then soldiered the final product together",
         "Utilized interrupts and polling in order to receive data from all of the electrical components"
       ],
-      "images" : "images/fry.jpg"
+      "images" : "images/Game-300.png"
     },
     {
       "title" : "Computer Architecture",
@@ -208,7 +208,7 @@ var projects = {
           "Implemented optimization techniques for speeding up processor by using probability",
           "Completed smaller projects that built upon each other to create the final project"
       ],
-      "images" : "images/fry.jpg"
+      "images" : "images/Computer-300.png"
     }
   ],
   "display" : function() {
