@@ -1,6 +1,6 @@
 var bio = {
   "name" : "Brent Harman",
-  "role" : "Front End Web Developer",
+  "role" : "Software Engineer",
   "contact" : {
     "email" : "brent.a.harman@gmail.com",
     "mobile" : "574-527-4733",
@@ -9,16 +9,13 @@ var bio = {
   },
   "welcomeMessage" : "Welcome",
   "skills" : [
-    "Python, Java, C, C++, VHDL, Visual Basic, and Assembly programming languages",
-    "Autocad, Modelsim, PSpice, Microsoft Office, and Matlab software",
-    "Microcontrollers, FPGA's, and PLD's",
-    "PLC 5's SLC 500's, Micrologix, CompactLogix, and ControlLogix",
-    "Rslogix 5000, Rslogix 500, Rslogix 5",
-    "Devicenet, Controlnet, and Ethernet I/O",
-    "FactoryTalk SE, FactoryTalk ME, Panelviews, and Thinmanager",
-    "Powerflex 70 VFDs, Powerflex 525 VFD's, Allen Bradley 160 VFDs, and Armorstart VFDs"
+    "C, Assembly, VHDL, Python, Java, CSS3, HTML5, and JavaScript",
+    "jQuery, Bootstrap, and HTML Canvas",
+    "NetBeans, Visual Studio, and Android Studio",
+    "Git, and SVN",
+    "Object Oriented Programming, Grunt, Node.js, FactoryTalk ME, and FactoryTalk SE"
   ],
-  "biopic" : "images/Brent_Harman-300.jpg",
+  "biopic" : "images/BrentHarman-300.jpg",
   "display" : function(){
     var formattedname = {};
     var formattedrole = {};
@@ -51,8 +48,6 @@ var bio = {
   }
 };
 
-bio.display();
-
 var work = {
   "jobs" : [{
       "employer" : "Red Gold",
@@ -60,12 +55,9 @@ var work = {
       "location" : "Geneva, IN",
       "dates" : "August 2014 - July 2015",
       "description" : [
-        "Provided controls support in a manufacturing facility",
-        "Maintained Allen Bradley PLC's, ACP thin clients, VFD Drives, Panelview, and other hardware for end user",
-        "Implemented software and hardware changes depending on what operators, supervisors, and managers required",
-        "Trained controls electricians after controls issues were solved",
-        "Delegated small controls projects for electricians to do electrical work on",
-        "Provided remote on-call support after business hours"
+        "Provided controls support in a manufacturing facility to minimize downtime",
+        "Maintained Allen Bradley PLC's, ACP thin clients, VFD Drives, Panelviews, and other hardware for end user to prevent potential downtime",
+        "Implemented software and hardware changes depending on what operators, supervisors, and managers required to improve upon processes, and eliminate legacy products"
       ]
     }
   ],
@@ -93,10 +85,18 @@ var work = {
   }
 };
 
-work.display();
-
 var education = {
   "schools" : [{
+      "name" : "Udacity",
+      "location" : "Online",
+      "degree" : "Nanodegree",
+      "majors" : [
+        "Front End Web Developer"
+      ],
+      "dates" : 2016,
+      "url" : ""
+    },
+    {
       "name" : "Purdue University",
       "location" : "West Lafayette, Indiana",
       "degree" : "BA",
@@ -104,14 +104,14 @@ var education = {
         "Computer Engineering"
       ],
       "dates" : 2013,
-      "url" : "none"
+      "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
     }
   ],
   "onlineCourses" : [{
-      "title" : "Front End Web Developer",
-      "school" : "Nanodegree",
-      "date" : 2016,
-      "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+      "title" : "",
+      "school" : "",
+      "date" : 0,
+      "url" : ""
     }
   ],
   "display" : function() {
@@ -139,7 +139,7 @@ var education = {
         $(".education-entry:last").append(formattedmajors);
       }
     }
-    for(i = 0; i < this.onlineCourses.length; i++){
+    /*for(i = 0; i < this.onlineCourses.length; i++){
       $("#onlineclasses").append(HTMLonlineStart);
       formattedtitle = HTMLonlineTitle.replace("%data%", this.onlineCourses[i].title);
       formattedschoolname = HTMLonlineSchool.replace("%data%", this.onlineCourses[i].school);
@@ -149,54 +149,30 @@ var education = {
       $(".onlineclasses-entry:last").append(formatteddates);
       formattedurl = HTMLonlineURL.replace("%data%", this.onlineCourses[i].url);
       $(".onlineclasses-entry:last").append(formattedurl);
-    }
+    }*/
   }
 };
 
-education.display();
-
 var projects = {
   "projects" : [{
-      "title" : "Data Structures",
-      "dates" : "Fall 2010",
+    "title" : "Arcade Game Clone",
+    "dates" : "December 2015",
+    "description" : [
+      "Developed Frogger Game based around a game engine",
+      "Utilized HTML Canvas to draw images related to game",
+      "Used Object Oriented Programming concepts to write code that is readable and easy to change"
+    ],
+    "images" : "images/Game-300.png"
+    },{
+      "title" : "Operator Station Upgrade",
+      "dates" : "January 2015",
       "description" : [
-        "Implemented a zipping and unzipping program that utilized various data structures with a partner using C",
-        "Created a recursive function to unzip data in order to preserve the pattern utilizing a binary search tree",
-        "Learned that data structures provide different run times depending on which ones are used"
+        "Interfaced new Panelview Terminal using Factory Talk Studio ME to replace outdated Quickview Terminal",
+        "Completed through testing on Panelview program before production run while keeping old Quick Panel in case of unexpected schedule change",
+        "Implemented any requested programming changes or fixes for irregular behavior after Panelview was being utilized by production"
       ],
-      "images" : "images/DataStructures-300.jpg"
-    },
-    {
-      "title" : "Senior Design",
-      "dates" : "Fall 2013",
-      "description" : [
-        "Designed automation subsystem for a 3 axis pick and place system that utilizes stepper motors and an electro-magnet to pick up randomly placed objects on a grid layout and return them to a home location on the grid",
-        "Presented design review with team and individually in order to show the progress periodically throughout project",
-        "Incorporated modularization in project to allow for easy integration of future subsystems"
-      ],
-      "images" : "images/Circuit-300.jpg"
-    },
-    {
-      "title" : "Vertically Integrated Projects",
-      "dates" : "Spring 2013",
-      "description" : [
-        "Collaborated with grad students on software for a football telemetry helmet circuit prototype involving a microcontroller in order to collect data on collisions during football games",
-        "Programmed microcontroller to work with gyroscopes and accelerometer to collect and store data",
-        "Started interfacing individual sensors with microcontroller, and then considered how to incorporate additional sensors afterward"
-      ],
-      "images" : "images/VIP-300.png"
-    },
-    {
-      "title" : "Microcontrollers",
-      "dates" : "Spring 2012",
-      "description" : [
-        "Participated with peers in the design of a Bop-It type system using a microcontroller and electrical components",
-        "Designed embedded circuits to interface with microcontroller and then soldiered the final product together",
-        "Utilized interrupts and polling in order to receive data from all of the electrical components"
-      ],
-      "images" : "images/Game-300.png"
-    },
-    {
+      "images" : "images/OperatorStation-300.jpg"
+    },{
       "title" : "Computer Architecture",
       "dates" : "Spring 2013",
       "description" : [
@@ -205,6 +181,15 @@ var projects = {
           "Completed smaller projects that built upon each other to create the final project"
       ],
       "images" : "images/Computer-300.png"
+    },{
+      "title" : "Microcontrollers",
+      "dates" : "Spring 2012",
+      "description" : [
+        "Participated with peers in the design of a Bop-It type system using a microcontroller and electrical components",
+        "Designed embedded circuits to interface with microcontroller and then soldiered the final product together",
+        "Utilized interrupts and polling in order to receive data from all of the electrical components"
+      ],
+      "images" : "images/Circuit-300.jpg"
     }
   ],
   "display" : function() {
@@ -228,8 +213,6 @@ var projects = {
   }
 };
 
-projects.display();
-
 function inName(Name){
   var Name_temp = Name.split(" ");
   var temp = Name_temp[0].charAt(0).toUpperCase();
@@ -240,6 +223,11 @@ function inName(Name){
   return Name;
 }
 
+
+bio.display();
+education.display();
+projects.display();
+work.display();
 $("#mapDiv").append(googleMap);
 
 //$(main).append(internationalizeButton);
