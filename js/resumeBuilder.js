@@ -18,7 +18,7 @@ var bio = {
     "FactoryTalk SE, FactoryTalk ME, Panelviews, and Thinmanager",
     "Powerflex 70 VFDs, Powerflex 525 VFD's, Allen Bradley 160 VFDs, and Armorstart VFDs"
   ],
-  "biopic" : "images/fry-300.jpg",
+  "biopic" : "images/Brent_Harman-300.jpg",
   "display" : function(){
     var formattedname = {};
     var formattedrole = {};
@@ -54,8 +54,7 @@ var bio = {
 bio.display();
 
 var work = {
-  "jobs" : [
-    {
+  "jobs" : [{
       "employer" : "Red Gold",
       "title" : "Controls Technician",
       "location" : "Geneva, IN",
@@ -97,8 +96,7 @@ var work = {
 work.display();
 
 var education = {
-  "schools" : [
-    {
+  "schools" : [{
       "name" : "Purdue University",
       "location" : "West Lafayette, Indiana",
       "degree" : "BA",
@@ -109,8 +107,7 @@ var education = {
       "url" : "none"
     }
   ],
-  "onlineCourses" : [
-    {
+  "onlineCourses" : [{
       "title" : "Front End Web Developer",
       "school" : "Nanodegree",
       "date" : 2016,
@@ -159,8 +156,7 @@ var education = {
 education.display();
 
 var projects = {
-  "projects" : [
-    {
+  "projects" : [{
       "title" : "Data Structures",
       "dates" : "Fall 2010",
       "description" : [
