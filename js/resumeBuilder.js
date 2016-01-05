@@ -139,17 +139,6 @@ var education = {
         $(".education-entry:last").append(formattedmajors);
       }
     }
-    /*for(i = 0; i < this.onlineCourses.length; i++){
-      $("#onlineclasses").append(HTMLonlineStart);
-      formattedtitle = HTMLonlineTitle.replace("%data%", this.onlineCourses[i].title);
-      formattedschoolname = HTMLonlineSchool.replace("%data%", this.onlineCourses[i].school);
-      formattedtitleschool = formattedtitle + formattedschoolname;
-      $(".onlineclasses-entry:last").append(formattedtitleschool);
-      formatteddates = HTMLonlineDates.replace("%data%", this.onlineCourses[i].date);
-      $(".onlineclasses-entry:last").append(formatteddates);
-      formattedurl = HTMLonlineURL.replace("%data%", this.onlineCourses[i].url);
-      $(".onlineclasses-entry:last").append(formattedurl);
-    }*/
   }
 };
 
@@ -158,18 +147,18 @@ var projects = {
     "title" : "Arcade Game Clone",
     "dates" : "December 2015",
     "description" : [
-      "Developed Frogger Game based around a game engine",
-      "Utilized HTML Canvas to draw images related to game",
-      "Used Object Oriented Programming concepts to write code that is readable and easy to change"
+      "Developed Arcade Game Clone utilizing given game engine",
+      "Utilized HTML Canvas to draw individual game entities and the background images",
+      "Implemented object oriented programming concepts in order to make code more readable and easier to expand upon"
     ],
     "images" : "images/Game-300.png"
     },{
       "title" : "Operator Station Upgrade",
       "dates" : "January 2015",
       "description" : [
-        "Interfaced new Panelview Terminal using Factory Talk Studio ME to replace outdated Quickview Terminal",
-        "Completed through testing on Panelview program before production run while keeping old Quick Panel in case of unexpected schedule change",
-        "Implemented any requested programming changes or fixes for irregular behavior after Panelview was being utilized by production"
+        "Interfaced new Panelview Terminal using Factory Talk Studio ME to replace outdated Quickview Terminal to prevent potential downtime from not having any spare Quickview Terminals",
+        "Completed through testing on Panelview program before production run while keeping old Quickview Terminal in case of unexpected schedule change",
+        "Implemented any requested programming changes after Panelview was being utilized by production"
       ],
       "images" : "images/OperatorStation-300.jpg"
     },{
@@ -216,7 +205,6 @@ var projects = {
 function inName(Name){
   var Name_temp = Name.split(" ");
   var temp = Name_temp[0].charAt(0).toUpperCase();
-//  console.log(temp);
   Name_temp[0] = Name_temp[0].replace(Name_temp[0][0], temp);
   Name_temp[1] = Name_temp[1].toUpperCase();
   Name = Name_temp[0] + " " + Name_temp[1];
@@ -229,8 +217,6 @@ education.display();
 projects.display();
 work.display();
 $("#mapDiv").append(googleMap);
-
-//$(main).append(internationalizeButton);
 
 /*
 This is empty on purpose! Your code to build the resume will go here.
